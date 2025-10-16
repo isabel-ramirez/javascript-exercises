@@ -14,8 +14,12 @@ const multiply = function(arr) {
   return arr.reduce((product, num) => product * num, 1);
 };
 
-const power = function() {
-	
+const power = function(num, exp) {
+  let result = 1;
+  for (let i = 0; i < exp; i++) {
+    result *= num;
+  }
+  return result;
 };
 
 const factorial = function() {

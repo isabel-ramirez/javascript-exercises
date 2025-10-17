@@ -1,6 +1,6 @@
 // Only numbers and lowercase letters
 const cleanString = function (string) {
-  const chars = string.trim().toLowerCase().split('');
+  const chars = string.toLowerCase().split('');
   const filteredChars = chars.filter(char => {
     const charCode = char.charCodeAt(0);
     return ((charCode >= 97 && charCode <= 122) || (charCode >= 48 && charCode <= 57));
